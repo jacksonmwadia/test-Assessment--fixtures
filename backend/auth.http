@@ -1,0 +1,13 @@
+POST http://localhost:4100/auth/login
+Content-Type: application/json
+
+{
+  "email": "test@gmail.com",
+  "password": "qwerty"
+}
+
+
+###
+POST http://localhost:4100/auth/checkdetails
+Content-Type: application/json
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiOWRhMGRjODQtYTBhMi00NzNmLWFlOTctZTUxOGQ0YjVmNjE5IiwibmFtZSI6InRlc3RlciIsImVtYWlsIjoidGVzdEBnbWFpbC5jb20iLCJyb2xlIjoidXNlciIsImFyZWFvZnNwZWNpYWxpemF0aW9uIjoiZGV2ZWxvcGVyIiwiaWF0IjoxNzA5Mjc2ODk4LCJleHAiOjE3MDkyODA0OTh9.vVx2VvcFON7XDHtttKLX6UOpt9nw2zEEclioTBxEDDo

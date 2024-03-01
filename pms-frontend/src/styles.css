@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+:root {
+    --primary-color: #3e30aa;
+    --primary-color-dark: #1d2e83;
+    --secondary-color: #f9fafe;
+    --text-color: #333333;
+    --white: #ffffff;
+    --max-width: 1200px;
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--secondary-color);
+  }
+  
