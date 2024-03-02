@@ -8,7 +8,7 @@ import { NavbarComponent } from '../navbar/navbar.component';
 @Component({
   selector: 'app-landing-page',
   standalone: true,
-  imports: [ CommonModule, NavbarComponent],
+  imports: [ CommonModule, NavbarComponent, RouterLink],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.css'
 })

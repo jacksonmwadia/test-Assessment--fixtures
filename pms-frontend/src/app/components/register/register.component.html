@@ -18,29 +18,41 @@
           <div *ngIf="registerForm.get('name')?.errors?.['required'] && registerForm.get('name')?.touched" class="error-message">
             Name is required.
           </div>
-
+        
           <label for="email">Email:</label><br />
           <input type="email" id="email" name="email" formControlName="email" placeholder="Enter your email" required>
           <div *ngIf="registerForm.get('email')?.errors?.['required'] && registerForm.get('email')?.touched" class="error-message">
             Email is required.
           </div>
-
-
-          <label for="phone">Phone Number:</label><br />
-          <input type="text" id="phone" name="phone_no" formControlName="phone_no" placeholder="Enter your phone number" required>
+        
+          <label for="role">Role:</label><br />
+          <input type="text" id="role" name="role" formControlName="role" placeholder="Enter your role" required>
+          <div *ngIf="registerForm.get('role')?.errors?.['required'] && registerForm.get('role')?.touched" class="error-message">
+            Role is required.
+          </div>
+        
+          <label for="areaofspecialization">Area of Specialization:</label><br />
+          <input type="text" id="areaofspecialization" name="areaofspecialization" formControlName="areaofspecialization" placeholder="Enter your area of specialization" required>
+          <div *ngIf="registerForm.get('areaofspecialization')?.errors?.['required'] && registerForm.get('areaofspecialization')?.touched" class="error-message">
+            Area of specialization is required.
+          </div>
+        
+          <label for="phone_no">Phone Number:</label><br />
+          <input type="text" id="phone_no" name="phone_no" formControlName="phone_no" placeholder="Enter your phone number" required>
           <div *ngIf="registerForm.get('phone_no')?.errors?.['required'] && registerForm.get('phone_no')?.touched" class="error-message">
             Phone number is required.
           </div>
-
+          
           <label for="password">Password:</label><br />
           <input type="password" id="password" name="password" formControlName="password" placeholder="Enter your password" required><br />
           <div *ngIf="registerForm.get('password')?.errors?.['required'] && registerForm.get('password')?.touched" class="error-message">
             Password is required.
           </div>
-
-          <button type="submit" > <a style="color: white;"> Register</a> </button><br />
+        
+          <button type="submit"> <a style="color: white;"> Register</a> </button><br />
           <a routerLink="/login">Already have an account? Login here</a>
         </form>
+        
       </div>
     </div>
   </body>
